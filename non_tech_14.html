@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: white;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        .container:hover{
+            transform: scale(1.02);
+        }
+        .profile {
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile:hover{
+            transform: translateY(-10px);
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile img:hover{
+            transform: scale(1.1);
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: black;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 5%;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10%;
+            border: 5px solid black;
+            transition: transform 0.3s;
+        }
+        .logo img {
+            height: 100px; 
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo img:hover{
+            transform: scale(1.1);
+        }
+        .project:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .project:hover img{
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="drawer-logo.png" alt="logo">
+        </div>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <h2>SECRETARY</h2>
+            <img src="dp.jpg" alt="Profile Picture">
+            <p>Hello, I am Vipin Yadav, the secretary of the Robotics Club IITK. Welcome to our club!</p>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <img src="Screenshot 2024-05-21 174007.jpg" alt="Project 1">
+                <h3>Project 1: Gyrobot</h3>
+                <p>A two-wheeled self-balancing robot that
+                    achieves perfect equilibrium, using technology and
+                    precision engineering.</p>
+                <p>The robot has locomotion capabilities while maintaining
+                    its balance similar to humans.</p>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2024-05-21 174110.jpg" alt="Project 2">
+                <h3>Project 2: Space Station: Control and Communication</h3>
+                <p>To develop and validate the communication
+                    and control system for remotely operating the
+                    Rover over extensive distances with precise
+                    movement and efficient data transfer.</p>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2024-05-21 174155.jpg" alt="Project 3">
+                <h3>Project 3: Autonomous Navigation of Mars Rover</h3>
+                <p>To design and simulate the system of
+                    autonomous navigation for the mars rover
+                    which mainly covers up obstacle detection and
+                    classification, obstacle avoidance and path
+                    planning to a specific location.</p>
+            </div>
+            <div class="project">
+                <img src="Screenshot 2024-05-21 174234.jpg" alt="Project 4">
+                <h3>Project 4: Robotic Arm</h3>
+                <p>We will firstly be work on the controls of motors
+                    using microcontrollers.
+                    Then jump to Robotics with use of Inverse
+                    Kinematics for arm movement
+                    In the end: The arm wil be able to pick and
+                    place a randomly placed object autonomously</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
